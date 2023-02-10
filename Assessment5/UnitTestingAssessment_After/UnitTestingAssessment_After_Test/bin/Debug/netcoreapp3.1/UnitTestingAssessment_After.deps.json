@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "UnitTestingAssessment_After/1.0.0": {
+        "runtime": {
+          "UnitTestingAssessment_After.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UnitTestingAssessment_After/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

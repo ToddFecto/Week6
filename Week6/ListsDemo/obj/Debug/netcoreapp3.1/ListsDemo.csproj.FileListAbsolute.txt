@@ -1,0 +1,13 @@
+C:\Dev\Week6\Week6\ListsDemo\bin\Debug\netcoreapp3.1\ListsDemo.exe
+C:\Dev\Week6\Week6\ListsDemo\bin\Debug\netcoreapp3.1\ListsDemo.deps.json
+C:\Dev\Week6\Week6\ListsDemo\bin\Debug\netcoreapp3.1\ListsDemo.runtimeconfig.json
+C:\Dev\Week6\Week6\ListsDemo\bin\Debug\netcoreapp3.1\ListsDemo.runtimeconfig.dev.json
+C:\Dev\Week6\Week6\ListsDemo\bin\Debug\netcoreapp3.1\ListsDemo.dll
+C:\Dev\Week6\Week6\ListsDemo\bin\Debug\netcoreapp3.1\ListsDemo.pdb
+C:\Dev\Week6\Week6\ListsDemo\obj\Debug\netcoreapp3.1\ListsDemo.csprojAssemblyReference.cache
+C:\Dev\Week6\Week6\ListsDemo\obj\Debug\netcoreapp3.1\ListsDemo.AssemblyInfoInputs.cache
+C:\Dev\Week6\Week6\ListsDemo\obj\Debug\netcoreapp3.1\ListsDemo.AssemblyInfo.cs
+C:\Dev\Week6\Week6\ListsDemo\obj\Debug\netcoreapp3.1\ListsDemo.csproj.CoreCompileInputs.cache
+C:\Dev\Week6\Week6\ListsDemo\obj\Debug\netcoreapp3.1\ListsDemo.dll
+C:\Dev\Week6\Week6\ListsDemo\obj\Debug\netcoreapp3.1\ListsDemo.pdb
+C:\Dev\Week6\Week6\ListsDemo\obj\Debug\netcoreapp3.1\ListsDemo.genruntimeconfig.cache

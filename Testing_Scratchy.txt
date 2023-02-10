@@ -1,0 +1,205 @@
+Parameter	Expected Return
+"cat"		"Meow"
+"Cat"		null
+"hello"		null
+null		null
+"CAT"		"MEOW"
+"dog"		"BARK"
+"DOG"		"BARK"
+"Dog"		null
+"cow"		"MOO"
+"COW"		"MOO"
+"Cow"		null
+""		null
+================================================================================
+WordJoin Function:	public static string WordJoin(string)
+Parameter								Expected
+"note it has 2 static methods and two non-static methods"	"NoteItHas2StaticMethodsAndTwoNon-staticMethods"
+""								null
+null								null
+
+===============
+Coupon Function		public static decimal CalculateCoupon(decimal purchase)
+Parameter	Expected
+10.00		2.00
+15.55		2.00
+19.99		2.00
+20.00		3.00
+22.00		3.00
+0.00		0.00
+1.00		0.00
+9.99		0.00
+
+=========================
+IntegersInString Function	public static int[] IntegersInString(string nums)
+Parameter			Expected
+"0,1,5,10,-9,300"		[0, 1, 5, 10, -9, 300]
+"This,5,is,10,an,Exception"	FormatException <<<contains words
+"-10,-5,-1,0,1,5,10"		[-10,-5,-1,0,1,5,10]
+"Another,1.5,1/2,Exception"	FormatException <<<contains words, decimals, fractions
+null				FormatException
+""				FormatException
+
+=================
+IsFactor Function		public static bool IsFactor(int X, int Y)
+Parameter			Expected
+0, 1				true
+1, 0				false
+1, 1				true
+2, 1				true
+10, 3				false
+15, 20				false
+25, 5				true
+50, 2				true
+75, 15				true
+100, 9				false
+
+
+====================================PracAssess5 Passing List<string> toys==========================
+I think it would be something like this. I don't remember the exact function call, something about the dog's
+happiness or whatever:
+Dog d = new Dog();
+List<string> toys = new List<string>() { "a", "b", "c", "d", "e", "f" }; // list of toys
+int actual = d.GetHappiness(toys);
+int expected = 5; // Or whatever the function returns when there are six items in the list
+Assert.Equals(actual, expected);
+=======================================Program.cs===================================================================
+using System;
+namespace NonStaticDemo
+{
+    // Remember to make the class public!
+    public class Rectangle
+    {
+        double Width;
+        double Height;
+        public Rectangle(double _Width, double _Height)
+        {
+            Width = _Width;
+            Height = _Height;
+        }
+        public double GetArea()
+        {
+            return Width * Height;
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+
+==============================XUnit project=======================================================================
+using System;
+using Xunit;
+using NonStaticDemo; // Remember to add the project reference and the using statement!
+namespace NonStaticDemo_Test
+{
+    public class UnitTest1
+    {
+        [Fact]
+        public void Test1()
+        {
+            // You need to create an instance of Rectangle.
+            // This instance will only live during this test function
+            Rectangle r1 = new Rectangle(3.0, 4.0);
+            double actual = r1.GetArea();
+            double expected = 12.0;
+            Assert.Equal(expected, actual); // Remember expected goes first!
+        }
+        // Here's how you could use theory.
+        [Theory]
+        [InlineData(0.0, 0.0, 0.0)]
+        [InlineData(3.0, 4.0, 12.0)]
+        [InlineData(4.0, 5.0, 20.0)]
+        public void Test2(double _Width, double _Height, double expected)
+        {
+            Rectangle r1 = new Rectangle(_Width, _Height);
+            double actual = r1.GetArea();
+            Assert.Equal(expected, actual); // Remember expected goes first!
+        }
+    }
+}
+===========================List in XUnit Testing With [Theory]========================
+=========Program.cs============
+using System;
+using System.Collections.Generic;
+namespace ListsDemo
+{
+    public class Stuff
+    {
+        public int UseList(List<string> MyList)
+        {
+            return MyList.Count * 2;
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        }
+    }
+}
+
+
+==========XUnit Testing==========
+using System;
+using Xunit;
+using ListsDemo;
+using System.Collections.Generic;
+namespace ListsDemo_Test
+{
+    public class UnitTest1
+    {
+        [Theory]
+        [InlineData(new string[] { "a", "b" }, 4)]
+        [InlineData(new string[] { "a", "b", "c" }, 6)]
+        [InlineData(new string[] { "x", "y", "z" }, 6)]
+        public void Test1(string[] items, int expected)
+        {
+            // We can only include arrays not lists in the InlineData
+            // So make a list from the array
+            List<string> mylist = new List<string>(items);
+            Stuff st = new Stuff();
+            int actual = st.UseList(mylist);
+            Assert.Equal(expected, actual);
+        }
+    }
+}
+
+ 
+===================================DateTime Object====================================
+Hey everyone, for practicing with DateTime, try creating just a regular console app,
+and no testing app yet, and just make a new DateTime instance and try doing
+a Console.WriteLine on it, and try different parameters, play with it, etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+================================================================================
+how I handled the null or empty for the password verifier
+if(string.IsNullOrEmpty(vPassword) || string.IsNullOrWhiteSpace(vPassword))
+
+
+&&
+                        (string.IsNullOrEmpty(p) || string.IsNullOrWhiteSpace(p))
+
+                if (p.Length > 8 && p.Any(char.IsUpper) && p.Any(char.IsLower) && p.Any(char.IsNumber))
+                {
+                    tryagain = false;
+                    return;
+                }

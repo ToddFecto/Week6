@@ -1,0 +1,13 @@
+C:\Dev\Week6\DogApp\DogApp\bin\Debug\netcoreapp3.1\DogApp.exe
+C:\Dev\Week6\DogApp\DogApp\bin\Debug\netcoreapp3.1\DogApp.deps.json
+C:\Dev\Week6\DogApp\DogApp\bin\Debug\netcoreapp3.1\DogApp.runtimeconfig.json
+C:\Dev\Week6\DogApp\DogApp\bin\Debug\netcoreapp3.1\DogApp.runtimeconfig.dev.json
+C:\Dev\Week6\DogApp\DogApp\bin\Debug\netcoreapp3.1\DogApp.dll
+C:\Dev\Week6\DogApp\DogApp\bin\Debug\netcoreapp3.1\DogApp.pdb
+C:\Dev\Week6\DogApp\DogApp\obj\Debug\netcoreapp3.1\DogApp.csprojAssemblyReference.cache
+C:\Dev\Week6\DogApp\DogApp\obj\Debug\netcoreapp3.1\DogApp.AssemblyInfoInputs.cache
+C:\Dev\Week6\DogApp\DogApp\obj\Debug\netcoreapp3.1\DogApp.AssemblyInfo.cs
+C:\Dev\Week6\DogApp\DogApp\obj\Debug\netcoreapp3.1\DogApp.csproj.CoreCompileInputs.cache
+C:\Dev\Week6\DogApp\DogApp\obj\Debug\netcoreapp3.1\DogApp.dll
+C:\Dev\Week6\DogApp\DogApp\obj\Debug\netcoreapp3.1\DogApp.pdb
+C:\Dev\Week6\DogApp\DogApp\obj\Debug\netcoreapp3.1\DogApp.genruntimeconfig.cache
